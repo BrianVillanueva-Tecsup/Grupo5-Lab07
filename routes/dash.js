@@ -4,13 +4,13 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   datos = {
-    "nombre" : "Grupo 5",
-    "email" : "grupo5@mail.com"
+    "nombre" : "Jhon Smith",
+    "email" : "jhon.smith@mail.com"
   }
   res.render('dash', function(err, html){
     res.render('templates/layout',{
       'usuario' : datos,
-      'tituloSeccion' : 'Bienvenidos',
+      'tituloSeccion' : 'Dashboard',
       'seccion' : html
     });
   });
